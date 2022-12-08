@@ -28,7 +28,7 @@ class PayPalServiceProvider extends ServiceProvider
     {
         // Publish config files
         $this->publishes([
-            __DIR__.'/../../config/config.php' => config_path('paypal.php'),
+            __DIR__.'/../../config/config.php' => config('paypal.php'),
         ]);
 
         // Publish Lang Files
